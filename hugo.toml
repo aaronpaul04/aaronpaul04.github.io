@@ -1,0 +1,40 @@
+# Hugo configuration
+baseURL = "https://YOUR-USERNAME.github.io/ctf-writeups/"
+defaultContentLanguage = "en"
+title = "CTF Writeups"
+theme = "blowfish"
+
+[languages.en]
+  languageName = "English"
+  weight = 1
+
+[languages.en.params.author]
+  name = "Aaron Paul"
+  headline = "CTF Writeups"
+
+[params]
+  description = "HackTheBox and CTF walkthroughs with practical exploitation steps."
+  mainSections = ["ctf-writeups"]
+  enableSearch = true
+  colorScheme = "noir"
+
+[params.homepage]
+  layout = "list"
+  showRecent = true
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    name = "Writeups"
+    url = "/ctf-writeups/"
+    weight = 10
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
