@@ -1,5 +1,5 @@
 # Hugo configuration
-baseURL = "https://YOUR-USERNAME.github.io/ctf-writeups/"
+baseURL = "https://aaronpaul04.github.io/ctf-writeups/"
 defaultContentLanguage = "en"
 title = "CTF Writeups"
 theme = "blowfish"
