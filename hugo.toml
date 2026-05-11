@@ -1,35 +1,63 @@
 # Hugo configuration
-baseURL = "https://aaronpaul04.github.io/ctf-writeups/"
+baseURL = "https://aaronpaul04.github.io/"
 defaultContentLanguage = "en"
-title = "CTF Writeups"
+title = "Aaron Paul"
 theme = "blowfish"
 
+enableRobotsTXT = true
+paginate = 10
+
 [languages.en]
-  languageName = "English"
   weight = 1
+
+[languages.en.params]
+  displayName = "EN"
 
 [languages.en.params.author]
   name = "Aaron Paul"
-  headline = "CTF Writeups"
+  headline = "CTF writeups, notes, and things I've learned along the way."
+  links = [
+    { github = "https://github.com/aaronpaul04" },
+    { linkedin = "https://www.linkedin.com/in/aaron-paul-982001289" },
+  ]
 
 [params]
-  description = "HackTheBox and CTF walkthroughs with practical exploitation steps."
+  description = "Aaron Paul - CTF writeups and cybersecurity notes."
   mainSections = ["ctf-writeups"]
   enableSearch = true
   colorScheme = "noir"
 
 [params.homepage]
-  layout = "list"
+  layout = "profile"
+  homepageImage = ""
   showRecent = true
+  showRecentItems = 6
+  showMoreLink = true
+  showMoreLinkDest = "/ctf-writeups"
+  cardView = true
+
+[params.article]
+  showDate = true
+  showWordCount = true
+  showReadingTime = true
+  showTableOfContents = true
+
+[params.list]
+  showCards = true
+  groupByYear = false
 
 [taxonomies]
   tag = "tags"
 
 [menu]
   [[menu.main]]
-    name = "Writeups"
+    name = "CTF-Writeups"
     url = "/ctf-writeups/"
     weight = 10
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 20
 
 [markup]
   [markup.highlight]
