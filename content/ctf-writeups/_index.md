@@ -1,12 +1,6 @@
-\---
-
-title: "CTF Writeups"
-
-description: "HackTheBox and CTF walkthroughs."
-
-showHero: false
-
-showAuthor: false
-
-\---
-
+--- 
+title: "CTF Writeups" 
+description: "HackTheBox and CTF walkthroughs." 
+showHero: false 
+showAuthor: false 
+--- 
